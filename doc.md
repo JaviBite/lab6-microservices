@@ -4,17 +4,17 @@
 
 * First is launched the registration server Eureka.
 
-![Logs](screenshots/eureka_start.PNG)
+![Logs](screenshots/eureka_start.png)
 
 * Eureka service is running on port 1111 without microservices registered.
 
-![DashBoard](screenshots/eureka_dash_.PNG)
+![DashBoard](screenshots/eureka_dash_.png)
 
 ## 2. Launching Accounts Microservice
 
 * The service is launched and registered in Eureka.
 
-![Logs](screenshots/account_start.PNG)
+![Logs](screenshots/account_start.png)
 
 * Eureka log:
 
@@ -26,13 +26,13 @@
 
 * Eureka dashboard have one service registered.
 
-![Eureka Dashboard](screenshots/eureka_dash2.PNG)
+![Eureka Dashboard](screenshots/eureka_dash2.png)
 
 ## 3. Launching Web microservice
 
 * The service is launched and registered in Eureka
 
-![Logs](screenshots/web_start.PNG)
+![Logs](screenshots/web_start.png)
 
 * Eureka log:
 ```
@@ -44,7 +44,7 @@
 
 * Eureka dashboard have now two service registered.
 
-![Eureka Dashboard](screenshots/eureka_dash3_.PNG)
+![Eureka Dashboard](screenshots/eureka_dash3_.png)
 
 ## 4. Launch a second accounts microservice on port 4444
 
@@ -52,7 +52,7 @@ In order to launch a new Account microservice on port 4444, the port (2222) in `
 
 * The second instance of Account is launched:
 
-![Logs](screenshots/account_start2.PNG)
+![Logs](screenshots/account_start2.png)
 
 * Eureka logs
 
@@ -65,14 +65,14 @@ In order to launch a new Account microservice on port 4444, the port (2222) in `
 
 * Eureka dashboard have now three service registered.
 
-![Eureka Dashboard](screenshots/eureka_dash4.PNG)
+![Eureka Dashboard](screenshots/eureka_dash4.png)
 
 ## 4. Killing the accounts microservice on port 2222
 
 After killing the first account micrsoervice, the microservice is still accessible because the microservice on 4444 is a recplica despite the microservice no longer appears in the
 Eureka's Dashboard.
 
-![Web service](screenshots/account_dash.PNG)
+![Web service](screenshots/account_dash.png)
 
 * Eureka logs
 
