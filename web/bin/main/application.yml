@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: web-service  # Identify this application
+
+# Application info
+info:
+  app:
+    name: Microservices Demo - Web Server
+    description: This is a Web application
+    version: 1.0.0
+
+# HTTP Server
+server:
+  port: 3333   # HTTP (Tomcat) port
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
